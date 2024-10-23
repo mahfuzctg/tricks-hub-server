@@ -1,10 +1,13 @@
 import httpStatus from "http-status";
-import AppError from "../../errors/AppError";
-import { TUser } from "../user/user.interface";
-import { User } from "../user/user.model";
+
+
+
 import { TLoginUser } from "./auth.interface";
 import jwt from 'jsonwebtoken'
 import config from "../../config";
+import { User } from "../user/user.model";
+import { TUser } from "../user/user.interface";
+import AppError from "../../errors/AppError";
 
 
 const createUserIntoDB = async (payload : TUser) => {
