@@ -11,7 +11,7 @@ const createPost = catchAsync (async (req, res) => {
    sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Post created successfully',
+    message: 'Post created successfully!',
     data: result,
   });
 })

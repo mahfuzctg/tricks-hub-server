@@ -9,8 +9,8 @@ const app = express()
 app.use(express.json())
 
 // use cors 
-// app.use(cors( {origin: "*"}));
-app.use(cors( {origin: "https://trend-tweaks.vercel.app"}));
+app.use(cors( {origin: "*"}));
+app.use(cors( {origin: "http://localhost:3000"}));
 
 // use router
 app.use('/api', router)
@@ -19,7 +19,7 @@ app.use('/api', router)
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Welcome to tricks hub server!😄💖')
 })
 
 // global error handler 
