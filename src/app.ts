@@ -8,8 +8,7 @@ const app = express();
 // Define allowed origins
 const allowedOrigins = [
   'https://tricks-hub-client.vercel.app',
-  "https://tricks-hub-server.vercel.app",
-  'http://localhost:3000', 
+
 ];
 
 // Set up CORS to check against allowed origins
